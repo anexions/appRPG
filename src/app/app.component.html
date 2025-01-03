@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>RoleraApp</span>
+</mat-toolbar>
+
+<mat-sidenav-container style="height: 100vh;">
+  <mat-sidenav mode="side" opened>
+    <p>Menú</p>
+    <a mat-button routerLink="/characters">Personajes</a>
+    <a mat-button routerLink="/create">Crear Personaje</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="padding: 1rem;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
